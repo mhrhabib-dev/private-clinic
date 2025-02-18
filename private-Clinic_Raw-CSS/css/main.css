@@ -1,10 +1,6 @@
 
-/* google font ----------   font-family: "Poppins" -------  */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-/* google font --------------font-family: "Inter", serif;-----------  */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Racing+Sans+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 
@@ -24,18 +20,21 @@
     --bg-color: #F8FAFC;
     --text-color: #1E293B;
     --gray-text-color: #1E293BB2;
-    --gray-light: #E5E7EB;
+    --light-gray: #E5E7EB;
     --white-light: #ffffff;
     --small-shadow:  0 1px 2px rgba(0, 0, 0, 0.25);
 
     /* font  */
     --primary-font: "Poppins", serif;
     --secondary-font: "Inter", serif;
+    --third-font: "Racing Sans One", serif;
 
     --header-size: 32px;
     --sub-header-size: 24px;
     --medium-text-size: 18px;
+    --base-text-size: 16px;
     --small-text-size: 14px;
+    --mini-text-size: 12px;
 
     --regular: 400;
     --medium: 500;
@@ -62,6 +61,11 @@ h1{
     font-weight: var(--bold);
     line-height: 48px;
     letter-spacing: 0.5%;
+}
+h2{
+    font-size: var(--sub-header-size);
+    font-weight: var(--semi-bold);
+    color: var(--primary-color);
 }
 h3{
     color: var(--primary-color);
@@ -129,7 +133,7 @@ nav .nav-links{
     margin-top: 30px;
 }
 .main-header p{
-    color: var(--gray-light);
+    color: var(--light-gray);
 }
 .main-header > button{
     font-size: var(--medium-text-size);
@@ -174,6 +178,8 @@ main{
     width: 1060px;
     margin: auto;
 }
+
+/* every section common style start  */
 section{
     margin-top: 80px;
 }
@@ -194,6 +200,7 @@ section h1::after{
     left: 0;
     position: absolute;
 }
+/* card shadow  */
 .shadow{
     box-shadow: var(--small-shadow);
     border-radius: 10px;
@@ -201,9 +208,21 @@ section h1::after{
 .shadow:hover{
     box-shadow: 0 4px 20px #34D39940;
 }
+/* container bottom border  */
 .bottom-border{
     text-align: right;
     margin-top: 26px;
+    position: relative;
+}
+.bottom-border::before{
+    position: absolute;
+    content: "";
+    width: 85%;
+    height: 1px;
+    background: var(--primary-color);
+    bottom: 50%;
+    transform: translateY(-50%);
+    left: 0;
 }
 .bottom-border span{
     display: inline-block;
@@ -215,15 +234,17 @@ section h1::after{
     font-weight: var(--medium);
     cursor: pointer;
 }
+/* every section common style end  */
 
-/* our service section style start  */
+/* our service and our doctors section common style   */
 .wrapper{
-    margin-top: 30px;
+    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-
 }
+
+/* only our services section style start  */
 .card{
     width: 320px;
     height: 481px;
@@ -249,8 +270,72 @@ section h1::after{
     font-family: var(--secondary-font);
     margin-top: 10px;
 }
-/* our service section style end  */
+/* only our service section style end  */
 
+/* our doctor section style start  */
+.doctors-profile{
+    width: 320px;
+    height: 481px;
+    position: relative;
+    cursor: default;
+    border-radius: 10px;
+}
+.doctors-profile .doc-profile-top-part{
+    width: 320px;
+    height: 311px;
+    background: var(--light-gray);
+    position: relative;
+}
+.doc-profile-top-part .doc-bg-clr{
+    background: var(--primary-color);
+    width: 320px;
+    height: 162px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px 10px 0 0;
+}
+.doc-profile-top-part .doc-profile-pic{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 50%;
+    top: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.doc-profile-pic img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid var(--primary-color);
+}
+.doc-profile-top-part span{
+    position: absolute;
+    right: 12px;
+    top: 20px;
+    font-family: var(--third-font);
+    font-size: 40px;
+    color: var(--light-gray);
+    text-align: right;
+    line-height: 25px;
+}
+.doc-profile-top-part span :last-child{
+    font-size: var(--base-text-size);
+}
+.doctors-profile .doc-text-container{
+    padding: 20px;
+}
+.doc-text-container h3{
+    margin: 8px 0;
+}
+.doc-text-container p{
+    font-family: var(--secondary-font);
+    font-size: var(--small-text-size);
+}
+
+
+/* our doctor section style end */
 
 
 

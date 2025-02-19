@@ -396,9 +396,96 @@ section h1::after{
     background: var(--secondary-color);
 }
 
-
-
 /* Health Tips section style end */
+
+/* testimonials section style start  */
+.testimonials{
+    position: relative;
+}
+.testimonials > label > i{
+    color: var(--primary-color);
+    font-size: var(--sub-header-size);
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+.fa-chevron-left{
+    left: 0;
+}
+#tap-1,
+#tap-2{
+    display: none;
+}
+#tap-2:checked ~ .testo-container >.testo-cards{
+    margin-left: -335px;
+}
+.fa-chevron-right{
+    right: 0;
+}
+.testo-container{
+    width: 985px;
+    height: 220px;
+    margin: 57px 40px 0 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.testo-cards{
+    width: 1990px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 5;
+}
+.testo-container .testo-card{
+    width: 315px;
+    height: 180px;
+    box-shadow: var(--small-shadow);
+    position: relative;
+    border-radius: 8px;
+}
+
+.testo-card img{
+    width: 86px;
+    height: 86px;
+    border: 3px solid var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: 30px;
+}
+.testo-card h4{
+    position: absolute;
+    left: 126px;
+    top: 13px;
+    font-size: var(--sub-header-size);
+    font-weight: var(--semi-bold);
+    color: var(--primary-color);
+}
+.testo-card p{
+    font-size: var(--small-text-size);
+    padding: 5px;
+    position: absolute;
+    top: 64px;
+    left: 17px;
+    font-family: var(--secondary-font);
+    line-height: 19px;
+}
+.testo-card .testo-star{
+    position: absolute;
+    bottom: 10px;
+    left: 17px;
+    display: flex;
+    align-items: center;
+}
+.testo-star i{
+    color: #FFE234;
+    margin-right: 3px;
+}
+
+/* testimonials section style end  */
 
 
 

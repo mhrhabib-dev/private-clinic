@@ -445,6 +445,7 @@ section h1::after{
     box-shadow: var(--small-shadow);
     position: relative;
     border-radius: 8px;
+    margin-bottom: 5px;
 }
 
 .testo-card img{
@@ -484,9 +485,125 @@ section h1::after{
     color: #FFE234;
     margin-right: 3px;
 }
-
 /* testimonials section style end  */
 
+/* about us section style start  */
+.about-us{
+    border: 1px solid red;
+}
+.about-container{
+    display: flex;
+    gap: 20px;
+}
+.about-us-text-container{
+    width: 501px;
+    padding: 0 16px 16px 16px;
+}
+.about-us-text-container h3{
+    font-size: var(--header-size);
+    font-weight: var(--bold);
+}
+.about-us-text-container p{
+    font-family: var(--secondary-font);
+    font-size: var(--regular);
+    margin: 10px 0 40px 0;
+}
+.about-us-text-container .short-des h4{
+    color: var(--primary-color);
+    font-size: var(--semi-bold);
+    margin-bottom: 10px;
+}
+
+/* about us section style end */
+
+/* contact us section style start  */
+.contact-container{
+    display: flex;
+    gap: 77px;
+    margin-top: 40px;
+}
+.contact-container .faqs-container{
+    width: 530px;
+}
+.faqs-container h2{
+    margin-bottom: 30px;
+}
+.faqs-container .fqa{
+    width: 100%;
+}
+.fqa label{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--small-shadow);
+    padding: 5px 10px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.fqa label span{
+    font-family: var(--secondary-font);
+    font-size: var(--medium-text-size);
+}
+.fqa label i{
+    cursor: pointer;
+}
+.fqa p{
+    box-shadow: var(--small-shadow);
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-family: var(--secondary-font);
+    font-size: var(--small-text-size);
+    display: none;
+     
+}
+.fqa input{
+    display: none;
+}
+
+/* fqa display block unblock */
+#firstQ:checked ~ .firstdes,
+#secondQ:checked ~ .seconddes{
+    display: block;
+}
+#firstQ:checked ~ label i,
+#secondQ:checked ~ label i{
+    transform: rotate(45deg);
+}
+
+/* form  */
+.contact-container form {
+    width: 454px;
+}
+.contact-container form > input,
+.contact-container form textarea{
+    display: block;
+    width: 100%;
+    box-shadow: var(--small-shadow);
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 6px;
+
+}
+.imPatient{
+    margin-top: 20px;
+    font-family: var(--secondary-font);
+    font-size: var(--base-text-size);
+    display: flex;
+    align-items: center;
+}
+.imPatient input{
+    margin-right: 10px;
+}
+.contact-container > form > :last-child{
+    background: var(--primary-color);
+    color: var(--white-light);
+    font-weight: var(--medium);
+    font-size: var(--medium-text-size);
+    cursor: pointer;
+}
+
+/* contact us section style end */
 
 
 /* main section style end */

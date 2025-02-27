@@ -1,0 +1,66 @@
+
+@import url('./components/font-family.css');
+@import url('./variables.css');
+
+/* main header style start  */
+
+header{
+    width: 100%;
+    height: 662px;
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.90), rgba(52, 211, 153, 0.10)), url('../img/Logo-Banner/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-header{
+    margin: auto 95px;
+    padding: 0 5px;
+}
+.main-header h1{
+    margin-top: 113px;
+    color: var(--white-light);
+}
+.main-header p,
+.main-header button{
+    margin-top: 30px;
+}
+.main-header p{
+    color: var(--light-gray);
+}
+.main-header > button{
+    font-size: var(--medium-text-size);
+    font-weight: var(--medium);
+    padding: 5px 20px;
+    border-radius: 8px;
+    background: var(--secondary-color);
+    border: 1px solid transparent;
+    color: var(--white-light);
+    cursor: pointer;
+    transition: .3s;
+}
+.main-header > button:hover{
+    background: transparent;
+    border: 1px solid var(--secondary-color);
+}
+.main-header .call-to-action{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.call-to-action > div{
+    display: flex;
+    align-items: center;
+}
+.call-to-action i{
+    color: var(--white-light);
+    font-size: 30px;
+    margin-right: 10px;
+}
+.call-to-action span{
+    color: var(--white-light)
+}
+.call-to-action > :last-child{
+    margin-left: 30px;
+}
+/* main header style end  */

@@ -1,0 +1,67 @@
+
+
+@import url('./components/font-family.css');
+@import url('./variables.css');
+/* our doctor section style start  */
+.doctors-profile{
+    width: 320px;
+    height: 481px;
+    position: relative;
+    cursor: default;
+    border-radius: 10px;
+}
+.doctors-profile .doc-profile-top-part{
+    width: 320px;
+    height: 311px;
+    background: var(--light-gray);
+    position: relative;
+}
+.doc-profile-top-part .doc-bg-clr{
+    background: var(--primary-color);
+    width: 320px;
+    height: 162px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px 10px 0 0;
+}
+.doc-profile-top-part .doc-profile-pic{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 50%;
+    top: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.doc-profile-pic img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid var(--primary-color);
+}
+.doc-profile-top-part span{
+    position: absolute;
+    right: 12px;
+    top: 20px;
+    font-family: var(--third-font);
+    font-size: 40px;
+    color: var(--light-gray);
+    text-align: right;
+    line-height: 25px;
+}
+.doc-profile-top-part span :last-child{
+    font-size: var(--base-text-size);
+}
+.doctors-profile .doc-text-container{
+    padding: 20px;
+}
+.doc-text-container h3{
+    margin: 8px 0;
+}
+.doc-text-container p{
+    font-family: var(--secondary-font);
+    font-size: var(--small-text-size);
+}
+
+/* our doctor section style end */

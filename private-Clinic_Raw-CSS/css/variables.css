@@ -1,0 +1,29 @@
+:root{
+    /* color  */
+    --primary-color: #0084FF;
+    --secondary-color: #34D399;
+    --bg-color: #F8FAFC;
+    --text-color: #1E293B;
+    --gray-text-color: #1E293BB2;
+    --light-gray: #E5E7EB;
+    --white-light: #ffffff;
+    --small-shadow:  0 1px 2px rgba(0, 0, 0, 0.25);
+
+    /* font  */
+    --primary-font: "Poppins", serif;
+    --secondary-font: "Inter", serif;
+    --third-font: "Racing Sans One", serif;
+
+    --header-size: 32px;
+    --sub-header-size: 24px;
+    --medium-text-size: 18px;
+    --base-text-size: 16px;
+    --small-text-size: 14px;
+    --mini-text-size: 12px;
+
+    --regular: 400;
+    --medium: 500;
+    --semi-bold: 600;
+    --bold: 700;
+
+}
